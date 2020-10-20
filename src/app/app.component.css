@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Patua+One');
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+header {
+    font-size: 1.5rem;
+    color: #007489;
+
+    font-family: 'Patua One', sans-serif;
+   
+  }
+#main > article {
+  flex: 1;
+  background: hsl(0, 0%, 90%);
+}
+#main > nav, 
+#main > aside {
+  background: beige;
+  
+}
+#main > nav {
+  order: -1;
+}
+
+header, footer, article, nav, aside {
+  padding: 1em;
+  margin: 2px;
+}
+@media screen and (max-width: 575px) {
+  #main {
+    flex-direction: column;
+  }
+}

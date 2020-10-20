@@ -1,0 +1,22 @@
+<p>navbar works!</p>
+
+<div *ngFor="let year of year_button">
+    <button (click)="onClickyear(year.name)">{{year.name}}</button>
+</div>
+
+<div>
+    <button [ngClass]="{
+        'btn primary-button': state ,
+        
+        'btn button-primary-active':!state
+        
+        }" (click)="onClickMe(true)">True</button>
+    <button [ngClass]="{
+        'btn primary-button': falseState ,
+        
+        'btn button-primary-active': !falseState
+        
+        }"(click)="falseLaunch(false)">False</button>
+</div>
+
+

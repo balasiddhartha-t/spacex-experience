@@ -1,0 +1,58 @@
+<!--    
+
+    <div class="main">
+    <ul class="cards">
+      <li class="cards_item"*ngFor="let user of user">
+        <div class="card">
+            <div class="card_content">
+            <div class="card_image" style="text-align: center;"><img src="https://i.pinimg.com/originals/14/56/ff/1456ff812c13e82795ed37e570a64bdb.jpg"></div>
+            <h2 class="card_title">{{user.mission_name}} #{{user.flight_number}}</h2>
+          
+           <label>Mission id : </label> {{user.mission_id}}<br>
+           <label>Launch Year :  </label> {{user.launch_year}}<br>
+           <label>Successful Launch :  </label> {{user.launch_success}}<br>
+           <label>Successful Land :  </label> {{user.rocket.first_stage.cores[0].land_success}}<br>
+          </div>
+        </div>
+      </li> 
+     </ul>
+  </div>
+  
+  
+
+    -->
+
+    
+    
+
+    <main class="main-area">
+        
+        <div class="centered">
+
+            <section class="cards" >
+                
+                <article class="card"*ngFor="let user of user" >
+                    <a href="#">
+                        <picture class="thumbnail">
+                            <img src={{user.links.mission_patch}} alt="A banana that looks like a bird">
+                        </picture>
+                        <div class="card-content">
+
+                            <h2>{{user.mission_name}} #{{user.flight_number}}</h2>
+                            
+                            <label>Mission id : </label> {{user.mission_id}}<br>
+           <label>Launch Year :  </label> {{user.launch_year}}<br>
+           <label>Successful Launch :  </label> {{user.launch_success}}<br>
+           <label>Successful Land :  </label> {{user.rocket.first_stage.cores[0].land_success}}<br>
+                        </div>
+                    </a>
+                </article>  
+                
+            </section>
+           
+        </div>
+        
+    </main>
+
+
+            
